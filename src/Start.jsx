@@ -6,7 +6,7 @@ export function Start({userName,setUserName}){
     }
     return(
         <div className="start">
-            <input type='text' placeHolder="Enter User Name" className="startInput" ref={inputRef}/>
+            <input type='text' placeholder="Enter User Name" className="startInput" ref={inputRef}/>
             <button className="startBtn" onClick={handleClick}>Start</button>
         </div>
     )

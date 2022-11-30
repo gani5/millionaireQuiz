@@ -129,12 +129,19 @@ function App() {
   useEffect(()=>{
     if(queNo>1)
     {
-      moneyPyramid.find((m)=>{
-        if(m.id===queNo-1)
+      // moneyPyramid.find((m)=>{
+      //   if(m.id===queNo-1)
+      //   {
+      //     setEarned(m.amount)
+      //   }
+      // })
+      for(let i=0;i<moneyPyramid.length;i++)
+      {
+        if(moneyPyramid[i]===queNo-1)
         {
-          setEarned(m.amount)
+          setEarned(moneyPyramid[i].amount)
         }
-      })
+      }
     }
   },[moneyPyramid,queNo])
   return (
