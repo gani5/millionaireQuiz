@@ -40,7 +40,7 @@ export function Trivia({data,queNo,setQueNo,setStop}){
                     {
                         question?.answers.map((a)=>{
                             return(
-                                <div key={question.id} className={selectedAnswer===a ? className : "answer"} onClick={()=>handleClick(a)}>{a.text}</div>
+                                <div  className={selectedAnswer===a ? className : "answer"} onClick={()=>handleClick(a)}>{a.text}</div>
                             )
                         
                         })
