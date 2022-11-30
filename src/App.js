@@ -110,21 +110,21 @@ function App() {
   ]
 
   const moneyPyramid=[
-    {id:1,amount:'$100'},
-    {id:2,amount:'$200'},
-    {id:3,amount:'$400'},
-    {id:4,amount:'$800'},
-    {id:5,amount:'$1600'},
-    {id:6,amount:'$3200'},
-    {id:7,amount:'$6400'},
-    {id:8,amount:'$2500'},
-    {id:9,amount:'$10000'},
-    {id:10,amount:'$50000'},
-    {id:11,amount:'$725000'},
-    {id:12,amount:'$2500000'},
-    {id:13,amount:'$500000'},
-    {id:14,amount:'$1000000'},
-    {id:15,amount:'$100000000'}
+    {id:1,amount:'1000'},
+    {id:2,amount:'2000'},
+    {id:3,amount:'3000'},
+    {id:4,amount:'5000'},
+    {id:5,amount:'10,000'},
+    {id:6,amount:'20,000'},
+    {id:7,amount:'40,000'},
+    {id:8,amount:'80,000'},
+    {id:9,amount:'160,000'},
+    {id:10,amount:'320,000'},
+    {id:11,amount:'640,000'},
+    {id:12,amount:'1,250,000'},
+    {id:13,amount:'2,500,000'},
+    {id:14,amount:'5,000,000'},
+    {id:15,amount:'10,000,000'}
   ].reverse();
   useEffect(()=>{
     if(queNo>1)
@@ -137,8 +137,9 @@ function App() {
       // })
       for(let i=0;i<moneyPyramid.length;i++)
       {
-        if(moneyPyramid[i]===queNo-1)
+        if(moneyPyramid[i].id===queNo-1)
         {
+          console.log()
           setEarned(moneyPyramid[i].amount)
         }
       }
